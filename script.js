@@ -38,4 +38,4 @@ function getDataFromAPI(url, sectionId) {
 getDataFromAPI("https://script.google.com/macros/s/AKfycbygenUO1OP1nxH7OFCMe2-R6BivxpJ9FyAcg-oANu1OPABqZiaD-vi92Q-YzD6THqTmGQ/exec", "education-section");
 
 // Appeler la fonction pour récupérer les données des expériences
-getDataFromAPI("https://script.google.com/macros/s/AKfycbwo1ENbtEy8S3ccR-S1VLuJQ5j-Y17UrhkPjI6TteiBn1GjutxqEvUZ0zqSBL8Ja-hc-w/exec", "experience-section");
+getDataFromAPI("https://script.google.com/macros/s/AKfycbyi0nMRPmMqxuZ7rfqBm90JeE3-jeWg0m4sqwtnfcbC5182WDfzk9TcGkcC62FgDKy7nw/exec", "experience-section");
