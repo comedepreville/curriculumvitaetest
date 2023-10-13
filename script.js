@@ -4,6 +4,11 @@ function getDataFromAPI(url, sectionId) {
         .then(response => response.json())
         .then(data => {
             const section = document.querySelector(`#${sectionId}`);
+            if (!section) {
+                console.error(`La section "${sectionId}" n'existe pas.`);
+                return;
+            }
+
             data.forEach(item => {
                 const div = document.createElement("div");
                 div.classList.add("education-experience-item");
@@ -26,7 +31,7 @@ function getDataFromAPI(url, sectionId) {
                 div.appendChild(infoSpan);
                 div.appendChild(descriptionP);
 
-                section.appendChild(div);
+                section.insertAdjacentElement("beforeend", div);
             });
         })
         .catch(error => {
